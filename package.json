@@ -9,7 +9,9 @@
   "author": "Sabuhi Teymurov",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.5.0"
+    "core-js": "^3.22.4",
+    "parcel": "^2.5.0",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0"
