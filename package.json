@@ -2,6 +2,10 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
+  "default": "index.html",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -10,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.22.4",
+    "fracty": "^1.0.11",
     "parcel": "^2.5.0",
     "regenerator-runtime": "^0.13.9"
   },
