@@ -1,6 +1,5 @@
 import icons from 'url:../../img/icons.svg';
 import fracty from 'fracty';
-console.log(fracty(0.5));
 
 class RecipeView {
   #parentElement = document.querySelector('.recipe');
@@ -117,19 +116,19 @@ class RecipeView {
 
   #generateMarkupIngredient(ob) {
     return `
-            <li class="recipe__ingredient">
-              <svg class="recipe__icon">
-                <use href="${icons}#icon-check"></use>
-              </svg>
-              <div class="recipe__quantity">${
-                ob.quantity ? ob.quantity : ''
-              }</div>
-              <div class="recipe__description">
-                <span class="recipe__unit">${ob.unit}</span>
-                ${ob.description}
-              </div>
-            </li>
-            `;
+    <li class="recipe__ingredient">
+      <svg class="recipe__icon">
+        <use href="${icons}#icon-check"></use>
+      </svg>
+      <div class="recipe__quantity">${
+        ob.quantity ? fracty(ob.quantity) : ''
+      }</div>
+      <div class="recipe__description">
+        <span class="recipe__unit">${ob.unit}</span>
+        ${ob.description}
+      </div>
+    </li>
+    `;
   }
 }
 
